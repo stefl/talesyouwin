@@ -1,0 +1,369 @@
+/* line 17, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 61, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 112.5%;
+}
+
+/* line 64, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 18px;
+  line-height: 1.333em;
+}
+
+/* line 30, ../../app/stylesheets/application.scss */
+body {
+  background-color: #e8f0f1;
+  color: #273234;
+}
+/* line 32, ../../app/stylesheets/application.scss */
+body a {
+  color: #8a9a7a;
+}
+/* line 18, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+body a:visited {
+  color: #bdc6b4;
+}
+/* line 21, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+body a:focus {
+  color: #cad1c2;
+}
+/* line 24, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+body a:hover {
+  color: #a4b097;
+}
+/* line 27, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+body a:active {
+  color: #b0bba5;
+}
+/* line 35, ../../app/stylesheets/application.scss */
+body h1 a {
+  text-decoration: none;
+}
+
+/* line 41, ../../app/stylesheets/application.scss */
+.page {
+  font-family: "athelas",serif;
+  *zoom: 1;
+  max-width: 59em;
+  _width: 59em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+/* line 38, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.page:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 45, ../../app/stylesheets/application.scss */
+.page header {
+  clear: both;
+}
+/* line 49, ../../app/stylesheets/application.scss */
+.page footer {
+  clear: both;
+  text-align: center;
+  float: none;
+  width: auto;
+  margin-right: auto;
+  #margin-left: auto;
+  display: block;
+  margin-top: 1.333em;
+  margin-bottom: 1.333em;
+}
+/* line 56, ../../app/stylesheets/application.scss */
+.page .twitter-follow-button {
+  position: relative;
+  top: 6px;
+}
+@media (min-width: 67.5em) {
+  /* line 62, ../../app/stylesheets/application.scss */
+  .page .content {
+    padding-left: 8.475%;
+    width: 83.051%;
+    float: left;
+    margin-right: 1.695%;
+    display: inline;
+  }
+}
+
+/* line 69, ../../app/stylesheets/application.scss */
+h1 {
+  font-size: 2em;
+  line-height: 1.333em;
+  font-family: "athelas", serif;
+  font-weight: 100;
+}
+@media (min-width: 67.5em) {
+  /* line 69, ../../app/stylesheets/application.scss */
+  h1 {
+    font-size: 2em;
+    line-height: 1.333em;
+  }
+}
+
+/* line 79, ../../app/stylesheets/application.scss */
+header#header {
+  padding-top: 1.333em;
+  padding-bottom: 1.333em;
+  margin-top: 1.333em;
+}
+/* line 81, ../../app/stylesheets/application.scss */
+header#header h1#logo {
+  font-size: 4em;
+  line-height: 0.667em;
+  text-align: center;
+  font-family: "athelas", serif;
+  font-weight: normal;
+}
+@media (min-width: 67.5em) {
+  /* line 81, ../../app/stylesheets/application.scss */
+  header#header h1#logo {
+    font-size: 4em;
+    line-height: 0.667em;
+  }
+}
+/* line 91, ../../app/stylesheets/application.scss */
+header#header h2 {
+  font-family: "athelas", serif;
+  font-weight: 200;
+  font-size: 1em;
+  line-height: 1.333em;
+  text-weight: light;
+  font-style: italic;
+  text-align: center;
+  color: #699da4;
+}
+@media (min-width: 67.5em) {
+  /* line 91, ../../app/stylesheets/application.scss */
+  header#header h2 {
+    font-size: 1.33em;
+    line-height: 3.008em;
+  }
+}
+
+/* line 109, ../../app/stylesheets/application.scss */
+section.content section {
+  background-color: rgba(255, 255, 255, 0.7);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 12px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 12px;
+  padding-top: 1.333em;
+  padding-bottom: 1.333em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-bottom: 1.333em;
+}
+@media (min-width: 67.5em) {
+  /* line 109, ../../app/stylesheets/application.scss */
+  section.content section {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+}
+/* line 121, ../../app/stylesheets/application.scss */
+section.content section header {
+  margin-bottom: 1.333em;
+}
+/* line 125, ../../app/stylesheets/application.scss */
+section.content section h1 a, section.content section h1 a:visited {
+  color: #528288;
+}
+/* line 129, ../../app/stylesheets/application.scss */
+section.content section h2.comments {
+  text-align: center;
+  margin-top: 1.333em;
+  margin-bottom: 1.333em;
+}
+
+/* line 137, ../../app/stylesheets/application.scss */
+p {
+  margin-bottom: 1.333em;
+}
+/* line 138, ../../app/stylesheets/application.scss */
+p:first-child {
+  margin-top: 1.333em;
+}
+
+/* line 144, ../../app/stylesheets/application.scss */
+#another {
+  text-align: center;
+  margin-top: 1.333em;
+}
+
+/* line 149, ../../app/stylesheets/application.scss */
+.btn, button {
+  font-size: 26px;
+  padding: 0.3em 1.5em;
+  display: inline-block;
+  cursor: pointer;
+  line-height: 1.5;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  background-color: #22aa44;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #22aa44), color-stop(70%, #44cc66));
+  background: -webkit-linear-gradient(#22aa44, #44cc66 70%);
+  background: -moz-linear-gradient(#22aa44, #44cc66 70%);
+  background: -o-linear-gradient(#22aa44, #44cc66 70%);
+  background: -ms-linear-gradient(#22aa44, #44cc66 70%);
+  background: linear-gradient(#22aa44, #44cc66 70%);
+  -webkit-box-shadow: #40d966 0 1px 0 inset;
+  -moz-box-shadow: #40d966 0 1px 0 inset;
+  box-shadow: #40d966 0 1px 0 inset;
+  border: 1px solid #35c258;
+  color: white;
+  text-shadow: #0e451c 0 -1px 0;
+  font-size: 1em;
+  line-height: 1.333em;
+  text-decoration: none;
+  color: white !important;
+}
+/* line 10, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/sassy-buttons-0.1.0/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.btn:hover, button:hover {
+  background-color: #35c258;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(3%, #1e953c), color-stop(75%, #35c258));
+  background: -webkit-linear-gradient(#1e953c 3%, #35c258 75%);
+  background: -moz-linear-gradient(#1e953c 3%, #35c258 75%);
+  background: -o-linear-gradient(#1e953c 3%, #35c258 75%);
+  background: -ms-linear-gradient(#1e953c 3%, #35c258 75%);
+  background: linear-gradient(#1e953c 3%, #35c258 75%);
+}
+/* line 13, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/sassy-buttons-0.1.0/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.btn:active, button:active {
+  -webkit-box-shadow: #32b653 0 1px 2px inset;
+  -moz-box-shadow: #32b653 0 1px 2px inset;
+  box-shadow: #32b653 0 1px 2px inset;
+}
+/* line 154, ../../app/stylesheets/application.scss */
+.btn:visited, button:visited {
+  color: white !important;
+}
+
+/* line 159, ../../app/stylesheets/application.scss */
+footer {
+  padding-top: 1.333em;
+  padding-bottom: 1.333em;
+}
+
+/* line 164, ../../app/stylesheets/application.scss */
+section {
+  padding-bottom: 1.333em;
+}
+/* line 166, ../../app/stylesheets/application.scss */
+section header {
+  text-align: center;
+}
+/* line 168, ../../app/stylesheets/application.scss */
+section header h1 {
+  text-align: center;
+  margin: auto;
+}
+
+/* line 176, ../../app/stylesheets/application.scss */
+form label {
+  display: block;
+  margin-top: 1.333em;
+  font-weight: bold;
+  font-style: italic;
+}
+/* line 182, ../../app/stylesheets/application.scss */
+form input[type=text] {
+  font-size: 1em;
+  line-height: 1.333em;
+  padding: 0.25em;
+}
+/* line 186, ../../app/stylesheets/application.scss */
+form textarea {
+  font-size: 1em;
+  line-height: 1.333em;
+  padding: 0.25em;
+  height: 12em;
+  width: 100%;
+}
+/* line 192, ../../app/stylesheets/application.scss */
+form button {
+  margin-top: 1.333em;
+}
+
+/* line 197, ../../app/stylesheets/application.scss */
+#description {
+  margin-top: 1.333em;
+}
+
+/* line 201, ../../app/stylesheets/application.scss */
+.step_embed, .step_embed .embed, .step_embed .embed iframe {
+  overflow: hidden;
+  *zoom: 1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}

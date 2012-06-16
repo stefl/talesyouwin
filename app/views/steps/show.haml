@@ -1,0 +1,12 @@
+%section
+  %h1
+    = @step.title
+  = simple_format @step.description
+  .step_embed
+    %a{:href=> @step.embed_url}
+  - if @next_step
+    %p
+      = link_to "Next", url_for(:steps, :show, :tale_slug => @step.tale.slug, :slug => @next_step.slug), :class => "btn"
+  - else
+    %p  
+      = link_to "The End", url_for(:tales, :end, :slug => @step.tale.slug), :class => "btn"

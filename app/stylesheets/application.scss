@@ -1,0 +1,204 @@
+$base-font-size: 18px;
+@import "compass/reset";
+@import "compass/typography";
+@import "compass/css3";
+@import "compass/typography/vertical_rhythm";
+@import "compass/utilities/links/link-colors";
+@import "sassy-buttons";
+
+$total-columns  : 12;             // a 12-column grid
+$column-width   : 4em;            // each column is 4em wide
+$gutter-width   : 1em;            // 1em gutters between columns
+$grid-padding   : $gutter-width;  // grid-padding equal to gutters
+
+$media-layout: 12;          // Use 12-col layout at matching min-width.
+$media-layout: 30em;        // At min 30em, use closest fitting layout.
+$media-layout: 30em 12;     // At min 30em, use 12-col layout.
+$media-layout: 12 60em;     // Use 12 cols up to max 60em.
+$media-layout: 30em 60em;   // Between min 30em & max 60em, use closest layout.
+$media-layout: 30em 12 60em;// Use 12 cols between min 30em & max 60em.
+$media-layout: 60em 12 30em;// Same. Larger length will always be max-width.
+$media-layout: 12 lt-ie9;  // Output is included under `.lt-ie9` class,
+$container-style: magic;
+$background-color: #e8f0f1;
+$link-color:   #8a9a7a;
+
+@import "susy";
+
+@include establish-baseline;
+
+body {
+  background-color: $background-color;
+  a {
+    @include link-colors($link-color, lighten($link-color,10), lighten($link-color,15), lighten($link-color,20), lighten($link-color,25));
+  }
+  h1 a {
+    text-decoration: none;
+  }
+  color: desaturate(darken($background-color,75),10);
+}
+
+.page { 
+  font-family: "athelas",serif;
+  @include container; 
+
+  header{ 
+    clear: both; 
+  }
+
+  footer {
+    clear: both;
+    text-align: center;
+    @include reset-columns;
+    @include leader(1);
+    @include trailer(1);
+  }
+  .twitter-follow-button {
+    position: relative;
+    top: 6px;
+  }
+  
+  @include at-breakpoint(60em 12) { 
+    .content { 
+      @include prefix(1);
+      @include span-columns(10,12);
+    }
+  }
+}
+
+h1 {
+  @include adjust-font-size-to($base-font-size * 2, $lines:2);
+  font-family: "athelas", serif;
+  font-weight: 100;
+  @include at-breakpoint(60em 12) { 
+    @include adjust-font-size-to($base-font-size * 2, $lines:2);
+  }
+}
+
+
+header#header {
+  h1 {
+    &#logo {
+      @include adjust-font-size-to($base-font-size * 4, $lines:2);
+      text-align: center;
+      font-family: "athelas", serif;
+      font-weight: normal;
+      @include at-breakpoint(60em 12) { 
+        @include adjust-font-size-to($base-font-size * 4, $lines:2);
+      }
+    }
+  }
+  h2 {
+    font-family: "athelas", serif;
+    font-weight: 200;
+    @include adjust-font-size-to($base-font-size * 1, $lines:1);
+    text-weight: light;
+    font-style: italic;
+    text-align: center;
+    color: darken($background-color,40);
+    @include at-breakpoint(60em 12) { 
+      @include adjust-font-size-to($base-font-size * 1.33, $lines:3);
+    }
+  }
+  @include padding-leader(1);
+  @include padding-trailer(1);
+  @include leader(1);
+}
+
+section.content {
+  section {
+    background-color: rgba(255,255,255,0.7);
+    @include box-shadow(rgba(0,0,0,0.1) 0px 0px 12px);
+    @include padding-leader(1);
+    @include padding-trailer(1);
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    @include trailer;
+    @include at-breakpoint(60em 12) { 
+      padding-left: 1.5em;
+      padding-right: 1.5em;
+    }
+    header {
+      @include trailer(1);
+    }
+    h1 {
+      a, a:visited {
+        color: darken($background-color,50);
+      }
+    }
+    h2.comments {
+      text-align: center;
+      @include leader(1);
+      @include trailer(1);
+    }
+  }
+}
+
+p {
+  &:first-child {
+    @include leader;  
+  }
+  @include trailer;
+}
+
+#another {
+  text-align: center;
+  @include leader(1);
+}
+
+.btn, button {
+  @include sassy-button("matte", 15px, 26px, #22aa44, #44cc66);
+  @include adjust-font-size-to($base-font-size * 1, $lines:1);
+  text-decoration:none;
+  color: white !important;
+  &:visited {
+    color: white !important;
+  }
+}
+
+footer {
+  @include padding-leader(1);
+  @include padding-trailer(1);
+}
+
+section {
+  @include padding-trailer(1);
+  header {
+    text-align: center;
+    h1 {
+      text-align: center;
+      margin: auto;
+    }
+  }
+}
+
+form {
+  label {
+    display: block;
+    @include leader;  
+    font-weight: bold;
+    font-style: italic;
+  }
+  input[type=text] {
+    @include adjust-font-size-to($base-font-size * 1, $lines:1);
+    padding: 0.25em;
+  }
+  textarea {
+    @include adjust-font-size-to($base-font-size * 1, $lines:1);
+    padding: 0.25em;
+    height: 12em;
+    width: 100%;
+  }
+  button {
+    @include leader;
+  }
+}
+
+#description{
+  @include leader;
+}
+
+.step_embed, .step_embed .embed, .step_embed .embed iframe {
+  @include clearfix();
+  @include box-sizing(border-box);
+}

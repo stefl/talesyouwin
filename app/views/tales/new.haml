@@ -1,0 +1,10 @@
+%section
+  %header
+    %h1
+      Create a new tale
+    %h2
+      A tale is a game or story that you can create that lets other people experience a series of audio files, videos, do small challenges and follow a narrative of your invention.
+
+  - form_for :tale, url(:tales, :create) do |f|
+    = render_partial :"tales/form", :locals => {:f => f}
+    %button{:type=>"submit"} Create my new tale

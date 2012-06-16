@@ -1,0 +1,10 @@
+%article.step
+  %h2
+    = link_to step.title, url_for(:steps, :show, :tale_slug => step.tale.slug, :slug => step.slug) 
+  = simple_format step.description
+  .step_embed
+    %a{:href=> step.embed_url}
+  - unless step.password.blank?
+    %h3 
+      Password:
+      = step.password

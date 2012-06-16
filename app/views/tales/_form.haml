@@ -1,0 +1,12 @@
+%div
+  = f.label :title
+  = f.text_field :title
+%div
+  = f.label "Where it is set, roughly (the town or city)"
+  = f.text_field :where
+%div
+  = f.label "Describe what happens in the story - why should someone experience it?"
+  ~ f.text_area :description
+%div
+  = f.label "What should the player do to start the game? Go to a particular place perhaps?"
+  ~ f.text_area :start_the_game
