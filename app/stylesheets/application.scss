@@ -199,7 +199,18 @@ form {
   @include leader;
 }
 
-.step_embed, .step_embed .embed, .step_embed .embed iframe {
+.tale_embed, .tale_embed .embed, .tale_embed .embed iframe, .step_embed, .step_embed .embed, .step_embed .embed iframe {
   @include clearfix();
   @include box-sizing(border-box);
+}
+
+.tale_embed {
+  width: 100%;
+  .embed {
+    width: 100%;
+    text-align: center;
+  }
+  frame {
+    margin: auto !important;
+  }
 }

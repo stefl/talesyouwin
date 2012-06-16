@@ -7,6 +7,7 @@ class Tale
   field :where, :type => String
   field :description, :type => String
   field :start_the_game, :type => String
+  field :embed_url, :type => String
 
   has_many :steps
   belongs_to :account

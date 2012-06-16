@@ -12,6 +12,9 @@
       - if @tale.account == current_account
         = link_to "Manage the steps that make up this tale", url_for(:tales, :manage, :slug => @tale.slug), :class => "btn"
   #description    
+    - unless @tale.embed_url.blank?
+      .tale_embed
+        %a{:href=> @tale.embed_url}
     = simple_format @tale.description
 
   - if @tale.steps.blank?

@@ -361,10 +361,24 @@ form button, form .btn {
 }
 
 /* line 202, ../../app/stylesheets/application.scss */
-.step_embed, .step_embed .embed, .step_embed .embed iframe {
+.tale_embed, .tale_embed .embed, .tale_embed .embed iframe, .step_embed, .step_embed .embed, .step_embed .embed iframe {
   overflow: hidden;
   *zoom: 1;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+/* line 207, ../../app/stylesheets/application.scss */
+.tale_embed {
+  width: 100%;
+}
+/* line 209, ../../app/stylesheets/application.scss */
+.tale_embed .embed {
+  width: 100%;
+  text-align: center;
+}
+/* line 213, ../../app/stylesheets/application.scss */
+.tale_embed frame {
+  margin: auto !important;
 }
