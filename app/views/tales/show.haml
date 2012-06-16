@@ -1,10 +1,10 @@
 %section
   %h1
     = @tale.title
-
-    (
-    = link_to "Edit", url_for(:tales, :edit, :slug => @tale.slug)
-    )
+    - if @tale.account == current_account
+      (
+      = link_to "Edit", url_for(:tales, :edit, :slug => @tale.slug)
+      )
   %h2
     %i
       Set in 

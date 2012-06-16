@@ -13,7 +13,13 @@
     For artists
 
   %p
-    Create a location-based story that you can invite people to experience. Include text, audio, video, locations, clues in a linear narrative that takes your audience through a series of locations with a narrative that you control.
+    Create a location-based story that you can invite people to experience. Include text, audio, video, locations, clues in a linear narrative that takes your audience through a series of locations with a narrative that you control. 
 
   %h2
-    = link_to "Create a tale", url_for(:tales, :new), :class => "btn"
+    - if current_account
+      = link_to "Create a tale", url_for(:tales, :new), :class => "btn"
+    - else
+      %a.btn{:href=>"/auth/twitter"}
+        %i.icon-twitter-sign
+        %span
+          Sign in with Twitter to create a tale
