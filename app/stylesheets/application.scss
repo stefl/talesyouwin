@@ -21,7 +21,7 @@ $media-layout: 60em 12 30em;// Same. Larger length will always be max-width.
 $media-layout: 12 lt-ie9;  // Output is included under `.lt-ie9` class,
 $container-style: magic;
 $background-color: #e8f0f1;
-$link-color:   #8a9a7a;
+$link-color:   #6a8a5a;
 
 @import "susy";
 
@@ -189,8 +189,9 @@ form {
     height: 12em;
     width: 100%;
   }
-  button {
+  button, .btn {
     @include leader;
+    font-family: "athelas", serif;
   }
 }
 

@@ -6,16 +6,3 @@
   - form_for @tale, url(:tales, :update, :slug => @tale.slug), :method => :put do |f|
     = render_partial :"tales/form", :locals => {:f => f}
     %button{:type=>"submit"} Save
-%section
-  %header
-    %h1
-      Steps
-  - @tale.steps.each do |step|
-    = render_partial :"steps/admin_item", :locals => {:step => step}
-%section
-  %header
-    %h1
-      Add a step
-  - form_for :step, url_for(:steps, :create, :slug => @tale.slug) do |f|
-    = render_partial :"steps/form", :locals => {:f => f}
-    %button{:type=>"submit"} Add this step

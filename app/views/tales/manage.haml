@@ -1,0 +1,15 @@
+%section
+  %header
+    %h1
+      Manage steps for
+      = @tale.title
+  - @tale.steps.each do |step|
+    = render_partial :"steps/admin_item", :locals => {:step => step}
+%section
+  %header
+    %h1
+      Add a step
+  - form_for :step, url_for(:steps, :create, :slug => @tale.slug) do |f|
+    = render_partial :"steps/form", :locals => {:f => f}
+    %button{:type=>"submit"} Add this step
+    = link_to "Done", url_for(:tales, :show, :slug => @tale.slug), :class => "btn"

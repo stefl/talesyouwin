@@ -1,28 +1,34 @@
 %section
-  %h1
-    = @tale.title
-    - if @tale.account == current_account
-      (
-      = link_to "Edit", url_for(:tales, :edit, :slug => @tale.slug)
-      )
-  %h2
-    %i
-      Set in 
-      = @tale.where
+  %header
+    %h1
+      = @tale.title
+    %h2
+      %i
+        Set in 
+        = @tale.where
+    %p
+      - if @tale.account == current_account
+        = link_to "Edit overview", url_for(:tales, :edit, :slug => @tale.slug), :class => "btn"
+      - if @tale.account == current_account
+        = link_to "Manage the steps that make up this tale", url_for(:tales, :manage, :slug => @tale.slug), :class => "btn"
   #description    
     = simple_format @tale.description
 
-  %section
-    %header
-      %h1
-        Play this game
-      %p
-        To begin the game, please follow these instructions:
+  - if @tale.steps.blank?
+    %h2
+      Coming soon
+  - else
+    %section
+      %header
+        %h1
+          Play this tale
+        %p
+          To begin the game, please follow these instructions:
 
-      = simple_format @tale.start_the_game
+        = simple_format @tale.start_the_game
 
-      %p
-        - if current_step(@tale) == @tale.steps.first
-          = link_to "Start", url_for(:tales, :play, :slug => @tale.slug), :class => "btn"
-        - else
-          = link_to "Continue", url_for(:tales, :play, :slug => @tale.slug), :class => "btn"
+        %p
+          - if current_step(@tale) == @tale.steps.first
+            = link_to "Start", url_for(:tales, :play, :slug => @tale.slug), :class => "btn"
+          - else
+            = link_to "Continue", url_for(:tales, :play, :slug => @tale.slug), :class => "btn"

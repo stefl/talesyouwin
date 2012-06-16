@@ -5,5 +5,15 @@
   = f.label :description
   = f.text_area :description
 %div
-  = f.label :url_for_content_to_embed
+  = f.label :embed_url
   = f.text_field :embed_url
+  %br
+  %small
+    A URL to a photo, video, audio clip hosted on another service (Flickr, Soundcloud, Youtube etc.), not a link to a file.
+
+%div
+  = f.label :password
+  = f.text_field :password
+  %br
+  %small
+    This is NOT a secure password, it's stored in plain text so you can see and edit it. Words that are similar enough will count as matches.

@@ -81,23 +81,23 @@ body {
 }
 /* line 32, ../../app/stylesheets/application.scss */
 body a {
-  color: #8a9a7a;
+  color: #6a8a5a;
 }
 /* line 18, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 body a:visited {
-  color: #bdc6b4;
+  color: #9fb892;
 }
 /* line 21, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 body a:focus {
-  color: #cad1c2;
+  color: #acc2a1;
 }
 /* line 24, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 body a:hover {
-  color: #a4b097;
+  color: #83a473;
 }
 /* line 27, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 body a:active {
-  color: #b0bba5;
+  color: #91ae83;
 }
 /* line 35, ../../app/stylesheets/application.scss */
 body h1 a {
@@ -350,16 +350,17 @@ form textarea {
   width: 100%;
 }
 /* line 192, ../../app/stylesheets/application.scss */
-form button {
+form button, form .btn {
   margin-top: 1.333em;
+  font-family: "athelas", serif;
 }
 
-/* line 197, ../../app/stylesheets/application.scss */
+/* line 198, ../../app/stylesheets/application.scss */
 #description {
   margin-top: 1.333em;
 }
 
-/* line 201, ../../app/stylesheets/application.scss */
+/* line 202, ../../app/stylesheets/application.scss */
 .step_embed, .step_embed .embed, .step_embed .embed iframe {
   overflow: hidden;
   *zoom: 1;
