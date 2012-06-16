@@ -4,8 +4,6 @@ TalesYouWin.controllers :auth do
     auth    = request.env["omniauth.auth"]
     account = nil
     if account = Account.where(:provider => auth["provider"], :uid => auth["uid"]).first
-      account.token = auth["credentials"]["token"]
-      account.save
       flash[:success] = "Hi! Welcome back...." if content_type == :html
     else
       flash[:success] = "Welcome..." if content_type == :html
