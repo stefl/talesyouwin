@@ -56,7 +56,7 @@
               %i.icon-twitter-sign
               %span
                 Twitter
-        %header#header          
+        %header#header{:class=>("large" if request.path == "/")}          
           %h1#logo
             %a{:title=>"Tales you Win", :href=>"/"} Tales you Win
           %h2

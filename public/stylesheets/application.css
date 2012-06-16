@@ -172,24 +172,14 @@ h1 {
 header#header {
   padding-top: 1.333em;
   padding-bottom: 1.333em;
-  margin-top: 1.333em;
 }
 /* line 81, ../../app/stylesheets/application.scss */
 header#header h1#logo {
-  font-size: 4em;
-  line-height: 0.667em;
   text-align: center;
   font-family: "athelas", serif;
   font-weight: normal;
 }
-@media (min-width: 67.5em) {
-  /* line 81, ../../app/stylesheets/application.scss */
-  header#header h1#logo {
-    font-size: 4em;
-    line-height: 0.667em;
-  }
-}
-/* line 91, ../../app/stylesheets/application.scss */
+/* line 87, ../../app/stylesheets/application.scss */
 header#header h2 {
   font-family: "athelas", serif;
   font-weight: 200;
@@ -201,14 +191,30 @@ header#header h2 {
   color: #699da4;
 }
 @media (min-width: 67.5em) {
-  /* line 91, ../../app/stylesheets/application.scss */
+  /* line 87, ../../app/stylesheets/application.scss */
   header#header h2 {
     font-size: 1.33em;
     line-height: 3.008em;
   }
 }
+/* line 102, ../../app/stylesheets/application.scss */
+header#header.large {
+  margin-top: 1.333em;
+}
+/* line 104, ../../app/stylesheets/application.scss */
+header#header.large h1.logo {
+  font-size: 4em;
+  line-height: 0.667em;
+}
+@media (min-width: 67.5em) {
+  /* line 104, ../../app/stylesheets/application.scss */
+  header#header.large h1.logo {
+    font-size: 4em;
+    line-height: 0.667em;
+  }
+}
 
-/* line 109, ../../app/stylesheets/application.scss */
+/* line 114, ../../app/stylesheets/application.scss */
 section.content section {
   background-color: rgba(255, 255, 255, 0.7);
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 12px;
@@ -221,43 +227,43 @@ section.content section {
   margin-bottom: 1.333em;
 }
 @media (min-width: 67.5em) {
-  /* line 109, ../../app/stylesheets/application.scss */
+  /* line 114, ../../app/stylesheets/application.scss */
   section.content section {
     padding-left: 1.5em;
     padding-right: 1.5em;
   }
 }
-/* line 121, ../../app/stylesheets/application.scss */
+/* line 126, ../../app/stylesheets/application.scss */
 section.content section header {
   margin-bottom: 1.333em;
 }
-/* line 125, ../../app/stylesheets/application.scss */
+/* line 130, ../../app/stylesheets/application.scss */
 section.content section h1 a, section.content section h1 a:visited {
   color: #528288;
 }
-/* line 129, ../../app/stylesheets/application.scss */
+/* line 134, ../../app/stylesheets/application.scss */
 section.content section h2.comments {
   text-align: center;
   margin-top: 1.333em;
   margin-bottom: 1.333em;
 }
 
-/* line 137, ../../app/stylesheets/application.scss */
+/* line 142, ../../app/stylesheets/application.scss */
 p {
   margin-bottom: 1.333em;
 }
-/* line 138, ../../app/stylesheets/application.scss */
+/* line 143, ../../app/stylesheets/application.scss */
 p:first-child {
   margin-top: 1.333em;
 }
 
-/* line 144, ../../app/stylesheets/application.scss */
+/* line 149, ../../app/stylesheets/application.scss */
 #another {
   text-align: center;
   margin-top: 1.333em;
 }
 
-/* line 149, ../../app/stylesheets/application.scss */
+/* line 154, ../../app/stylesheets/application.scss */
 .btn, button {
   font-size: 26px;
   padding: 0.3em 1.5em;
@@ -303,45 +309,45 @@ p:first-child {
   -moz-box-shadow: #32b653 0 1px 2px inset;
   box-shadow: #32b653 0 1px 2px inset;
 }
-/* line 154, ../../app/stylesheets/application.scss */
+/* line 159, ../../app/stylesheets/application.scss */
 .btn:visited, button:visited {
   color: white !important;
 }
 
-/* line 159, ../../app/stylesheets/application.scss */
+/* line 164, ../../app/stylesheets/application.scss */
 footer {
   padding-top: 1.333em;
   padding-bottom: 1.333em;
 }
 
-/* line 164, ../../app/stylesheets/application.scss */
+/* line 169, ../../app/stylesheets/application.scss */
 section {
   padding-bottom: 1.333em;
 }
-/* line 166, ../../app/stylesheets/application.scss */
+/* line 171, ../../app/stylesheets/application.scss */
 section header {
   text-align: center;
 }
-/* line 168, ../../app/stylesheets/application.scss */
+/* line 173, ../../app/stylesheets/application.scss */
 section header h1 {
   text-align: center;
   margin: auto;
 }
 
-/* line 176, ../../app/stylesheets/application.scss */
+/* line 181, ../../app/stylesheets/application.scss */
 form label {
   display: block;
   margin-top: 1.333em;
   font-weight: bold;
   font-style: italic;
 }
-/* line 182, ../../app/stylesheets/application.scss */
+/* line 187, ../../app/stylesheets/application.scss */
 form input[type=text] {
   font-size: 1em;
   line-height: 1.333em;
   padding: 0.25em;
 }
-/* line 186, ../../app/stylesheets/application.scss */
+/* line 191, ../../app/stylesheets/application.scss */
 form textarea {
   font-size: 1em;
   line-height: 1.333em;
@@ -349,18 +355,18 @@ form textarea {
   height: 12em;
   width: 100%;
 }
-/* line 192, ../../app/stylesheets/application.scss */
+/* line 197, ../../app/stylesheets/application.scss */
 form button, form .btn {
   margin-top: 1.333em;
   font-family: "athelas", serif;
 }
 
-/* line 198, ../../app/stylesheets/application.scss */
+/* line 203, ../../app/stylesheets/application.scss */
 #description {
   margin-top: 1.333em;
 }
 
-/* line 202, ../../app/stylesheets/application.scss */
+/* line 207, ../../app/stylesheets/application.scss */
 .tale_embed, .tale_embed .embed, .tale_embed .embed iframe, .step_embed, .step_embed .embed, .step_embed .embed iframe {
   overflow: hidden;
   *zoom: 1;
@@ -369,16 +375,16 @@ form button, form .btn {
   box-sizing: border-box;
 }
 
-/* line 207, ../../app/stylesheets/application.scss */
+/* line 212, ../../app/stylesheets/application.scss */
 .tale_embed {
   width: 100%;
 }
-/* line 209, ../../app/stylesheets/application.scss */
+/* line 214, ../../app/stylesheets/application.scss */
 .tale_embed .embed {
   width: 100%;
   text-align: center;
 }
-/* line 213, ../../app/stylesheets/application.scss */
+/* line 218, ../../app/stylesheets/application.scss */
 .tale_embed frame {
   margin: auto !important;
 }

@@ -79,13 +79,9 @@ h1 {
 header#header {
   h1 {
     &#logo {
-      @include adjust-font-size-to($base-font-size * 4, $lines:2);
       text-align: center;
       font-family: "athelas", serif;
       font-weight: normal;
-      @include at-breakpoint(60em 12) { 
-        @include adjust-font-size-to($base-font-size * 4, $lines:2);
-      }
     }
   }
   h2 {
@@ -102,7 +98,16 @@ header#header {
   }
   @include padding-leader(1);
   @include padding-trailer(1);
-  @include leader(1);
+  
+  &.large {
+    @include leader(1);
+    h1.logo {
+      @include adjust-font-size-to($base-font-size * 4, $lines:2);
+      @include at-breakpoint(60em 12) { 
+        @include adjust-font-size-to($base-font-size * 4, $lines:2);
+      }
+    }
+  }
 }
 
 section.content {
