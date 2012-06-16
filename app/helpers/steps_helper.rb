@@ -6,7 +6,8 @@ TalesYouWin.helpers do
     puts session[:tales]
     return @current_step if @current_step
     session[:tales] ||= {}
-    session[:tales][tale.id.to_s] ||= [tale.steps.first.id.to_s]
+    session[:tales][tale.id.to_s] ||= []
+    session[:tales][tale.id.to_s] ||= [tale.steps.first.id.to_s] unless tale.steps.blank?
     @current_step = Step.find(session[:tales][tale.id.to_s].last) rescue tale.steps.first
   end
 
