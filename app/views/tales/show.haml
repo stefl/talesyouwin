@@ -7,9 +7,9 @@
         Set in 
         = @tale.where
     %p
-      - if @tale.account.id == current_account.id
+      - if current_account && (@tale.account.id == current_account.id)
         = link_to "Edit overview", url_for(:tales, :edit, :slug => @tale.slug), :class => "btn"
-      - if @tale.account.id == current_account.id
+      - if current_account && (@tale.account.id == current_account.id)
         = link_to "Manage the steps that make up this tale", url_for(:tales, :manage, :slug => @tale.slug), :class => "btn"
   #description    
     - unless @tale.embed_url.blank?
