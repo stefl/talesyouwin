@@ -298,3 +298,12 @@ h2 i{
     @include omega;
   }
 }
+
+.btn {
+  width: 100%;
+  @include clearfix();
+  @include box-sizing(border-box);
+  @include at-breakpoint(30em 12) { 
+    width: auto;
+  }
+}

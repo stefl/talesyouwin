@@ -488,3 +488,18 @@ h2 i {
     display: inline;
   }
 }
+/* line 302, ../../app/stylesheets/application.scss */
+.btn {
+  width: 100%;
+  overflow: hidden;
+  *zoom: 1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media (min-width: 33.75em) {
+  /* line 302, ../../app/stylesheets/application.scss */
+  .btn {
+    width: auto;
+  }
+}
