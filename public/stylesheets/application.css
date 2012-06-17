@@ -74,39 +74,39 @@ html {
   line-height: 1.333em;
 }
 
-/* line 30, ../../app/stylesheets/application.scss */
+/* line 35, ../../app/stylesheets/application.scss */
 body {
   background-color: #e8f0f1;
   color: #273234;
 }
-/* line 32, ../../app/stylesheets/application.scss */
+/* line 37, ../../app/stylesheets/application.scss */
 body a {
-  color: #6a8a5a;
+  color: #4aaa3a;
 }
 /* line 18, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 body a:visited {
-  color: #9fb892;
+  color: #85d179;
 }
 /* line 21, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 body a:focus {
-  color: #acc2a1;
+  color: #97d88c;
 }
 /* line 24, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 body a:hover {
-  color: #83a473;
+  color: #63c453;
 }
 /* line 27, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 body a:active {
-  color: #91ae83;
+  color: #74cb66;
 }
-/* line 35, ../../app/stylesheets/application.scss */
+/* line 40, ../../app/stylesheets/application.scss */
 body h1 a {
   text-decoration: none;
 }
 
-/* line 41, ../../app/stylesheets/application.scss */
+/* line 46, ../../app/stylesheets/application.scss */
 .page {
-  font-family: "athelas",serif;
+  font-family: "rooney-web", serif;
   *zoom: 1;
   max-width: 59em;
   _width: 59em;
@@ -121,11 +121,11 @@ body h1 a {
   display: table;
   clear: both;
 }
-/* line 45, ../../app/stylesheets/application.scss */
+/* line 50, ../../app/stylesheets/application.scss */
 .page header {
   clear: both;
 }
-/* line 49, ../../app/stylesheets/application.scss */
+/* line 54, ../../app/stylesheets/application.scss */
 .page footer {
   clear: both;
   text-align: center;
@@ -137,13 +137,13 @@ body h1 a {
   margin-top: 1.333em;
   margin-bottom: 1.333em;
 }
-/* line 56, ../../app/stylesheets/application.scss */
+/* line 61, ../../app/stylesheets/application.scss */
 .page .twitter-follow-button {
   position: relative;
   top: 6px;
 }
 @media (min-width: 67.5em) {
-  /* line 62, ../../app/stylesheets/application.scss */
+  /* line 67, ../../app/stylesheets/application.scss */
   .page .content {
     padding-left: 8.475%;
     width: 83.051%;
@@ -153,68 +153,79 @@ body h1 a {
   }
 }
 
-/* line 69, ../../app/stylesheets/application.scss */
+/* line 74, ../../app/stylesheets/application.scss */
 h1 {
   font-size: 2em;
   line-height: 1.333em;
-  font-family: "athelas", serif;
+  font-family: "rooney-web", sans-serif;
   font-weight: 100;
 }
 @media (min-width: 67.5em) {
-  /* line 69, ../../app/stylesheets/application.scss */
+  /* line 74, ../../app/stylesheets/application.scss */
   h1 {
     font-size: 2em;
     line-height: 1.333em;
   }
 }
 
-/* line 79, ../../app/stylesheets/application.scss */
+/* line 84, ../../app/stylesheets/application.scss */
 header#header {
   padding-top: 1.333em;
-  padding-bottom: 1.333em;
 }
-/* line 81, ../../app/stylesheets/application.scss */
+/* line 86, ../../app/stylesheets/application.scss */
 header#header h1#logo {
   text-align: center;
-  font-family: "athelas", serif;
+  font-family: "tamarillo", sans-serif;
   font-weight: normal;
 }
-/* line 87, ../../app/stylesheets/application.scss */
+/* line 92, ../../app/stylesheets/application.scss */
 header#header h2 {
-  font-family: "athelas", serif;
+  font-family: "rooney-web", sans-serif;
   font-weight: 200;
-  font-size: 1em;
-  line-height: 1.333em;
+  font-size: 0.5em;
+  line-height: 2.667em;
   text-weight: light;
   font-style: italic;
   text-align: center;
   color: #699da4;
 }
 @media (min-width: 67.5em) {
-  /* line 87, ../../app/stylesheets/application.scss */
+  /* line 92, ../../app/stylesheets/application.scss */
   header#header h2 {
-    font-size: 1.33em;
-    line-height: 3.008em;
+    font-size: 1em;
+    line-height: 2.667em;
   }
 }
-/* line 102, ../../app/stylesheets/application.scss */
+/* line 106, ../../app/stylesheets/application.scss */
 header#header.large {
   margin-top: 1.333em;
 }
-/* line 104, ../../app/stylesheets/application.scss */
-header#header.large h1.logo {
+/* line 108, ../../app/stylesheets/application.scss */
+header#header.large h1#logo {
   font-size: 4em;
   line-height: 0.667em;
 }
 @media (min-width: 67.5em) {
-  /* line 104, ../../app/stylesheets/application.scss */
-  header#header.large h1.logo {
+  /* line 108, ../../app/stylesheets/application.scss */
+  header#header.large h1#logo {
     font-size: 4em;
     line-height: 0.667em;
   }
 }
-
 /* line 114, ../../app/stylesheets/application.scss */
+header#header.large h2 {
+  font-size: 1em;
+  line-height: 1.333em;
+}
+@media (min-width: 67.5em) {
+  /* line 114, ../../app/stylesheets/application.scss */
+  header#header.large h2 {
+    font-size: 1.33em;
+    line-height: 3.008em;
+  }
+}
+
+/* line 124, ../../app/stylesheets/application.scss */
 section.content section {
   background-color: rgba(255, 255, 255, 0.7);
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 12px;
@@ -227,43 +238,43 @@ section.content section {
   margin-bottom: 1.333em;
 }
 @media (min-width: 67.5em) {
-  /* line 114, ../../app/stylesheets/application.scss */
+  /* line 124, ../../app/stylesheets/application.scss */
   section.content section {
     padding-left: 1.5em;
     padding-right: 1.5em;
   }
 }
-/* line 126, ../../app/stylesheets/application.scss */
+/* line 136, ../../app/stylesheets/application.scss */
 section.content section header {
   margin-bottom: 1.333em;
 }
-/* line 130, ../../app/stylesheets/application.scss */
+/* line 140, ../../app/stylesheets/application.scss */
 section.content section h1 a, section.content section h1 a:visited {
   color: #528288;
 }
-/* line 134, ../../app/stylesheets/application.scss */
+/* line 144, ../../app/stylesheets/application.scss */
 section.content section h2.comments {
   text-align: center;
   margin-top: 1.333em;
   margin-bottom: 1.333em;
 }
 
-/* line 142, ../../app/stylesheets/application.scss */
+/* line 154, ../../app/stylesheets/application.scss */
 p {
   margin-bottom: 1.333em;
 }
-/* line 143, ../../app/stylesheets/application.scss */
+/* line 155, ../../app/stylesheets/application.scss */
 p:first-child {
   margin-top: 1.333em;
 }
 
-/* line 149, ../../app/stylesheets/application.scss */
+/* line 161, ../../app/stylesheets/application.scss */
 #another {
   text-align: center;
   margin-top: 1.333em;
 }
 
-/* line 154, ../../app/stylesheets/application.scss */
+/* line 166, ../../app/stylesheets/application.scss */
 .btn, button {
   font-size: 26px;
   padding: 0.3em 1.5em;
@@ -292,6 +303,7 @@ p:first-child {
   line-height: 1.333em;
   text-decoration: none;
   color: white !important;
+  font-family: "facitweb", sans-serif;
 }
 /* line 10, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/sassy-buttons-0.1.0/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn:hover, button:hover {
@@ -309,45 +321,45 @@ p:first-child {
   -moz-box-shadow: #32b653 0 1px 2px inset;
   box-shadow: #32b653 0 1px 2px inset;
 }
-/* line 159, ../../app/stylesheets/application.scss */
+/* line 172, ../../app/stylesheets/application.scss */
 .btn:visited, button:visited {
   color: white !important;
 }
 
-/* line 164, ../../app/stylesheets/application.scss */
+/* line 177, ../../app/stylesheets/application.scss */
 footer {
   padding-top: 1.333em;
   padding-bottom: 1.333em;
 }
 
-/* line 169, ../../app/stylesheets/application.scss */
+/* line 182, ../../app/stylesheets/application.scss */
 section {
   padding-bottom: 1.333em;
 }
-/* line 171, ../../app/stylesheets/application.scss */
+/* line 184, ../../app/stylesheets/application.scss */
 section header {
   text-align: center;
 }
-/* line 173, ../../app/stylesheets/application.scss */
+/* line 186, ../../app/stylesheets/application.scss */
 section header h1 {
   text-align: center;
   margin: auto;
 }
 
-/* line 181, ../../app/stylesheets/application.scss */
+/* line 194, ../../app/stylesheets/application.scss */
 form label {
   display: block;
   margin-top: 1.333em;
   font-weight: bold;
   font-style: italic;
 }
-/* line 187, ../../app/stylesheets/application.scss */
+/* line 200, ../../app/stylesheets/application.scss */
 form input[type=text] {
   font-size: 1em;
   line-height: 1.333em;
   padding: 0.25em;
 }
-/* line 191, ../../app/stylesheets/application.scss */
+/* line 204, ../../app/stylesheets/application.scss */
 form textarea {
   font-size: 1em;
   line-height: 1.333em;
@@ -355,18 +367,18 @@ form textarea {
   height: 12em;
   width: 100%;
 }
-/* line 197, ../../app/stylesheets/application.scss */
+/* line 210, ../../app/stylesheets/application.scss */
 form button, form .btn {
   margin-top: 1.333em;
   font-family: "athelas", serif;
 }
 
-/* line 203, ../../app/stylesheets/application.scss */
+/* line 216, ../../app/stylesheets/application.scss */
 #description {
   margin-top: 1.333em;
 }
 
-/* line 207, ../../app/stylesheets/application.scss */
+/* line 220, ../../app/stylesheets/application.scss */
 .tale_embed, .tale_embed .embed, .tale_embed .embed iframe, .step_embed, .step_embed .embed, .step_embed .embed iframe {
   overflow: hidden;
   *zoom: 1;
@@ -375,16 +387,21 @@ form button, form .btn {
   box-sizing: border-box;
 }
 
-/* line 212, ../../app/stylesheets/application.scss */
+/* line 225, ../../app/stylesheets/application.scss */
 .tale_embed {
   width: 100%;
 }
-/* line 214, ../../app/stylesheets/application.scss */
+/* line 227, ../../app/stylesheets/application.scss */
 .tale_embed .embed {
   width: 100%;
   text-align: center;
 }
-/* line 218, ../../app/stylesheets/application.scss */
+/* line 231, ../../app/stylesheets/application.scss */
 .tale_embed frame {
   margin: auto !important;
+}
+
+/* line 236, ../../app/stylesheets/application.scss */
+h2 i {
+  font-style: italic;
 }

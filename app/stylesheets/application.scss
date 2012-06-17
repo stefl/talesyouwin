@@ -21,7 +21,12 @@ $media-layout: 60em 12 30em;// Same. Larger length will always be max-width.
 $media-layout: 12 lt-ie9;  // Output is included under `.lt-ie9` class,
 $container-style: magic;
 $background-color: #e8f0f1;
-$link-color:   #6a8a5a;
+$link-color:   #4aaa3a;
+
+$logo_face: "tamarillo", sans-serif;
+$title_face: "rooney-web", sans-serif;
+$body_face: "rooney-web", serif;
+$button_face: "facitweb", sans-serif;
 
 @import "susy";
 
@@ -39,7 +44,7 @@ body {
 }
 
 .page { 
-  font-family: "athelas",serif;
+  font-family: $body_face;
   @include container; 
 
   header{ 
@@ -68,7 +73,7 @@ body {
 
 h1 {
   @include adjust-font-size-to($base-font-size * 2, $lines:2);
-  font-family: "athelas", serif;
+  font-family: $title_face;
   font-weight: 100;
   @include at-breakpoint(60em 12) { 
     @include adjust-font-size-to($base-font-size * 2, $lines:2);
@@ -80,31 +85,36 @@ header#header {
   h1 {
     &#logo {
       text-align: center;
-      font-family: "athelas", serif;
+      font-family: $logo_face;
       font-weight: normal;
     }
   }
   h2 {
-    font-family: "athelas", serif;
+    font-family: $title_face;
     font-weight: 200;
-    @include adjust-font-size-to($base-font-size * 1, $lines:1);
+    @include adjust-font-size-to($base-font-size * 0.5, $lines:1);
     text-weight: light;
     font-style: italic;
     text-align: center;
     color: darken($background-color,40);
     @include at-breakpoint(60em 12) { 
-      @include adjust-font-size-to($base-font-size * 1.33, $lines:3);
+      @include adjust-font-size-to($base-font-size * 1, $lines:2);
     }
   }
   @include padding-leader(1);
-  @include padding-trailer(1);
   
   &.large {
     @include leader(1);
-    h1.logo {
+    h1#logo {
       @include adjust-font-size-to($base-font-size * 4, $lines:2);
       @include at-breakpoint(60em 12) { 
         @include adjust-font-size-to($base-font-size * 4, $lines:2);
+      }
+    }
+    h2 {
+      @include adjust-font-size-to($base-font-size * 1, $lines:1);
+      @include at-breakpoint(60em 12) { 
+        @include adjust-font-size-to($base-font-size * 1.33, $lines:3);
       }
     }
   }
@@ -139,6 +149,8 @@ section.content {
   }
 }
 
+
+
 p {
   &:first-child {
     @include leader;  
@@ -156,6 +168,7 @@ p {
   @include adjust-font-size-to($base-font-size * 1, $lines:1);
   text-decoration:none;
   color: white !important;
+  font-family: $button_face;
   &:visited {
     color: white !important;
   }
@@ -218,4 +231,8 @@ form {
   frame {
     margin: auto !important;
   }
+}
+
+h2 i{
+  font-style: italic;
 }

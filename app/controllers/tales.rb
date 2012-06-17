@@ -1,5 +1,6 @@
 TalesYouWin.controllers :tales do
   get :index, :map => "/" do
+    @home = true
     render :'tales/index'
   end
 
