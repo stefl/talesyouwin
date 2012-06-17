@@ -17,12 +17,13 @@
         %a{:href=> @tale.embed_url}
     = simple_format @tale.description
 
-    %p.twitter_user
-      %a{:href=>"https://twitter.com/#{@tale.account.screen_name}"}
-        %img{:src=>"https://api.twitter.com/1/users/profile_image?screen_name=#{@tale.account.screen_name}&size=normal"}
-        %br
-        By
-        = "@#{@tale.account.screen_name}"
+    - if @tale.account.screen_name
+      %p.twitter_user
+        %a{:href=>"https://twitter.com/#{@tale.account.screen_name}"}
+          %img{:src=>"https://api.twitter.com/1/users/profile_image?screen_name=#{@tale.account.screen_name}&size=normal"}
+          %br
+          By
+          = "@#{@tale.account.screen_name}"
 
   - if @tale.steps.blank?
     %h2
