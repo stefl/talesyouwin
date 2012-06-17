@@ -1,0 +1,8 @@
+%section
+  %header
+    %h1
+      Edit this step
+  - form_for @step, url_for(:steps, :update, :tale_slug => @tale.slug, :slug => @step.slug), :method => :put do |f|
+    = render_partial :"steps/form", :locals => {:f => f}
+    %button{:type=>"submit"} Update this step
+    = link_to "Cancel", url_for(:tales, :show, :slug => @tale.slug), :class => "btn"

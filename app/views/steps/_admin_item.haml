@@ -4,6 +4,7 @@
   %h2
     = link_to step.title, url_for(:steps, :show, :tale_slug => step.tale.slug, :slug => step.slug) 
     %a.btn.delete{:href=>url_for(:steps, :show, :tale_slug => step.tale.slug, :slug => step.slug)} ×
+    %a.btn.edit{:href=>url_for(:steps, :edit, :tale_slug => step.tale.slug, :slug => step.slug)} Edit
   = simple_format step.description
   .step_embed
     %a{:href=> step.embed_url}
