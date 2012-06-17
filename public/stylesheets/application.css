@@ -419,15 +419,16 @@ h2 i {
 
 /* line 250, ../../app/stylesheets/application.scss */
 #overview {
+  display: none;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 253, ../../app/stylesheets/application.scss */
+/* line 254, ../../app/stylesheets/application.scss */
 #overview h2 {
   margin-bottom: 1.333em;
   text-align: center;
 }
-/* line 257, ../../app/stylesheets/application.scss */
+/* line 258, ../../app/stylesheets/application.scss */
 #overview .icon {
   margin: auto;
   width: 128px;
@@ -435,16 +436,20 @@ h2 i {
   background-image: url(/images/home_icons.png);
   background-repeat: no-repeat;
 }
-/* line 266, ../../app/stylesheets/application.scss */
+/* line 267, ../../app/stylesheets/application.scss */
 #overview .column:nth-child(2) .icon {
   background-position: -165px 0px;
 }
-/* line 273, ../../app/stylesheets/application.scss */
+/* line 274, ../../app/stylesheets/application.scss */
 #overview .column:nth-child(3) .icon {
   background-position: -330px 0px;
 }
-@media (min-width: 67.5em) {
-  /* line 279, ../../app/stylesheets/application.scss */
+@media (min-width: 33.75em) {
+  /* line 250, ../../app/stylesheets/application.scss */
+  #overview {
+    display: block;
+  }
+  /* line 281, ../../app/stylesheets/application.scss */
   #overview .column {
     padding-bottom: 1.333em;
     margin-bottom: 1.333em;
@@ -453,8 +458,30 @@ h2 i {
     margin-right: 1.695%;
     display: inline;
   }
-  /* line 285, ../../app/stylesheets/application.scss */
+  /* line 286, ../../app/stylesheets/application.scss */
   #overview .column:nth-child(3) {
+    float: right;
+    margin-right: 0;
+    #margin-left: -1em;
+    display: inline;
+  }
+}
+
+@media (min-width: 33.75em) {
+  /* line 293, ../../app/stylesheets/application.scss */
+  #tales_you_can_play {
+    width: 49.153%;
+    float: left;
+    margin-right: 1.695%;
+    display: inline;
+  }
+
+  /* line 296, ../../app/stylesheets/application.scss */
+  #for_artists {
+    width: 32.203%;
+    float: left;
+    margin-right: 1.695%;
+    display: inline;
     float: right;
     margin-right: 0;
     #margin-left: -1em;

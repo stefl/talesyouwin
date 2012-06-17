@@ -248,8 +248,9 @@ h2 i{
 }
 
 #overview {
+  display: none;
   @include clearfix();
-  
+
   h2 {
     @include trailer;
     text-align: center;
@@ -275,16 +276,25 @@ h2 i{
       }
     }
   }
-  @include at-breakpoint(60em 12) { 
+  @include at-breakpoint(30em 12) { 
+    display: block;
     .column {
       @include padding-trailer;
       @include trailer;
       @include span-columns(4,12);
-      
 
       &:nth-child(3) {
         @include omega;
       }
     }
+  }
+}
+@include at-breakpoint(30em 12) { 
+  #tales_you_can_play {
+    @include span-columns(6,12);
+  }
+  #for_artists {
+    @include span-columns(4,12);
+    @include omega;
   }
 }
