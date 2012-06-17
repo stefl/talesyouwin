@@ -1,3 +1,5 @@
+require 'open-uri'
+
 class Account
   include Mongoid::Document
   attr_accessor :password, :password_confirmation
@@ -11,6 +13,16 @@ class Account
   field :provider,         :type => String
   field :auth
   field :uid
+  field :screen_name
+
+  before_save :cache_twitter
+
+  def cache_twitter
+    if screen_name.blank?
+      json = JSON.parse(open("https://twitter.com/users/#{uid}.json").read)
+      self.screen_name = json["screen_name"]
+    end
+  end
 
   ##
   # This method is for authentication purpose

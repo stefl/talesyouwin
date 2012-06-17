@@ -390,18 +390,29 @@ form button, form .btn {
 /* line 225, ../../app/stylesheets/application.scss */
 .tale_embed {
   width: 100%;
+  margin-bottom: 1.333em;
 }
-/* line 227, ../../app/stylesheets/application.scss */
+/* line 228, ../../app/stylesheets/application.scss */
 .tale_embed .embed {
   width: 100%;
   text-align: center;
 }
-/* line 231, ../../app/stylesheets/application.scss */
+/* line 232, ../../app/stylesheets/application.scss */
 .tale_embed frame {
   margin: auto !important;
 }
 
-/* line 236, ../../app/stylesheets/application.scss */
+/* line 237, ../../app/stylesheets/application.scss */
 h2 i {
   font-style: italic;
+}
+
+@media (min-width: 67.5em) {
+  /* line 241, ../../app/stylesheets/application.scss */
+  #sign_in_out {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 33%;
+  }
 }

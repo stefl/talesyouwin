@@ -224,6 +224,7 @@ form {
 
 .tale_embed {
   width: 100%;
+  @include trailer;
   .embed {
     width: 100%;
     text-align: center;
@@ -235,4 +236,13 @@ form {
 
 h2 i{
   font-style: italic;
+}
+
+#sign_in_out {
+  @include at-breakpoint(60em 12) { 
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 33%;
+  }
 }

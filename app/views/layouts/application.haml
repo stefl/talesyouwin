@@ -44,19 +44,20 @@
 
   %body{:id=>(request.path.split("/")[1] rescue "")}
     .page
-      - unless @step 
-        #sign_in_out
-          - if current_account
-            %a.btn-primary.btn-small{:href=>"/sign_out"}
-              %i.icon-facebook-sign
-              Sign out
-          - else
-            Sign in with
-            %a#sign_in.btn-primary.btn-small{:href=>"/auth/twitter"}
-              %i.icon-twitter-sign
-              %span
-                Twitter
-        %header#header{:class=>("large" if @home)}          
+      - unless @step
+        %header#header{:class=>("large" if @home)}    
+         
+          #sign_in_out
+            - if current_account
+              %a.btn-primary.btn-small{:href=>"/sign_out"}
+                %i.icon-facebook-sign
+                Sign out
+            - else
+              Sign in with
+              %a#sign_in.btn-primary.btn-small{:href=>"/auth/twitter"}
+                %i.icon-twitter-sign
+                %span
+                  Twitter      
           %h1#logo
             %a{:title=>"Tales you Win", :href=>"/"} Tales you Win
           %h2
