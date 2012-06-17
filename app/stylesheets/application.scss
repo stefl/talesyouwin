@@ -20,10 +20,10 @@ $media-layout: 30em 12 60em;// Use 12 cols between min 30em & max 60em.
 $media-layout: 60em 12 30em;// Same. Larger length will always be max-width.
 $media-layout: 12 lt-ie9;  // Output is included under `.lt-ie9` class,
 $container-style: magic;
-$background-color: #e8f0f1;
+$background-color: #eaf0f1;
 $link-color:   #4aaa3a;
 
-$logo_face: "tamarillo", sans-serif;
+$logo_face: "rooney-web", sans-serif;
 $title_face: "rooney-web", sans-serif;
 $body_face: "rooney-web", serif;
 $button_face: "facitweb", sans-serif;
@@ -86,7 +86,7 @@ header#header {
     &#logo {
       text-align: center;
       font-family: $logo_face;
-      font-weight: normal;
+      font-weight: light;
     }
   }
   h2 {
@@ -106,7 +106,7 @@ header#header {
   &.large {
     @include leader(1);
     h1#logo {
-      @include adjust-font-size-to($base-font-size * 4, $lines:2);
+      @include adjust-font-size-to($base-font-size * 3, $lines:3);
       @include at-breakpoint(60em 12) { 
         @include adjust-font-size-to($base-font-size * 4, $lines:2);
       }

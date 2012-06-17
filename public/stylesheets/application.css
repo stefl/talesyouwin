@@ -76,8 +76,8 @@ html {
 
 /* line 35, ../../app/stylesheets/application.scss */
 body {
-  background-color: #e8f0f1;
-  color: #273234;
+  background-color: #eaf0f1;
+  color: #2a3233;
 }
 /* line 37, ../../app/stylesheets/application.scss */
 body a {
@@ -175,8 +175,8 @@ header#header {
 /* line 86, ../../app/stylesheets/application.scss */
 header#header h1#logo {
   text-align: center;
-  font-family: "tamarillo", sans-serif;
-  font-weight: normal;
+  font-family: "rooney-web", sans-serif;
+  font-weight: light;
 }
 /* line 92, ../../app/stylesheets/application.scss */
 header#header h2 {
@@ -187,7 +187,7 @@ header#header h2 {
   text-weight: light;
   font-style: italic;
   text-align: center;
-  color: #699da4;
+  color: #70999f;
 }
 @media (min-width: 67.5em) {
   /* line 92, ../../app/stylesheets/application.scss */
@@ -202,8 +202,8 @@ header#header.large {
 }
 /* line 108, ../../app/stylesheets/application.scss */
 header#header.large h1#logo {
-  font-size: 4em;
-  line-height: 0.667em;
+  font-size: 3em;
+  line-height: 1.333em;
 }
 @media (min-width: 67.5em) {
   /* line 108, ../../app/stylesheets/application.scss */
@@ -250,7 +250,7 @@ section.content section header {
 }
 /* line 140, ../../app/stylesheets/application.scss */
 section.content section h1 a, section.content section h1 a:visited {
-  color: #528288;
+  color: #587e84;
 }
 /* line 144, ../../app/stylesheets/application.scss */
 section.content section h2.comments {
