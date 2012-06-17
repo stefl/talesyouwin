@@ -6,3 +6,12 @@
     = render_partial :"steps/form", :locals => {:f => f}
     %button{:type=>"submit"} Update this step
     = link_to "Cancel", url_for(:tales, :show, :slug => @tale.slug), :class => "btn"
+
+%section
+  %header
+    %h1
+      Delete this step
+    %p
+      There's no undo! 
+      %a.btn.delete{:href=>url_for(:steps, :show, :tale_slug => @step.tale.slug, :slug => @step.slug)} Delete
+
