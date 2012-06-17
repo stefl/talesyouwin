@@ -20,7 +20,7 @@ TalesYouWin.controllers :steps do
     halt(403, "Not Authorized") unless @tale.account == current_account
     @step = Step.new(params[:step])
     @step.tale = @tale
-    @step.ordering = @tale.steps.max(:ordering) + 1
+    @step.ordering = (@tale.steps.max(:ordering) || 0) + 1
     @step.save
     redirect url_for(:tales, :edit, :slug => @tale.slug)
   end
