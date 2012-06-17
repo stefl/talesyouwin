@@ -22,7 +22,14 @@ TalesYouWin.controllers :steps do
     @step.tale = @tale
     @step.ordering = (@tale.steps.max(:ordering) || 0) + 1
     @step.save
-    redirect url_for(:tales, :edit, :slug => @tale.slug)
+    redirect url_for(:tales, :manage, :slug => @tale.slug)
+  end
+
+  delete :delete, :map => "/tales/:tale_slug/steps/:slug" do
+    not_found unless @tale = Tale.where(:slug => params[:tale_slug]).first
+    not_found unless @step = @tale.steps.where(:slug => params[:slug]).first
+    @step.destroy
+    redirect url_for(:tales, :manage, :slug => @tale.slug)
   end
 
 end

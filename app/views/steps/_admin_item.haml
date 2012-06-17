@@ -1,6 +1,9 @@
-%article.step
+-# coding: utf-8
+
+%article.step.delete_target
   %h2
     = link_to step.title, url_for(:steps, :show, :tale_slug => step.tale.slug, :slug => step.slug) 
+    %a.btn.delete{:href=>url_for(:steps, :show, :tale_slug => step.tale.slug, :slug => step.slug)} ×
   = simple_format step.description
   .step_embed
     %a{:href=> step.embed_url}
