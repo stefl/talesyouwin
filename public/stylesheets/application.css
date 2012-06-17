@@ -416,3 +416,48 @@ h2 i {
     width: 33%;
   }
 }
+
+/* line 250, ../../app/stylesheets/application.scss */
+#overview {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 253, ../../app/stylesheets/application.scss */
+#overview h2 {
+  margin-bottom: 1.333em;
+  text-align: center;
+}
+/* line 257, ../../app/stylesheets/application.scss */
+#overview .icon {
+  margin: auto;
+  width: 128px;
+  height: 128px;
+  background-image: url(/images/home_icons.png);
+  background-repeat: no-repeat;
+}
+/* line 266, ../../app/stylesheets/application.scss */
+#overview .column:nth-child(2) .icon {
+  background-position: -165px 0px;
+}
+/* line 273, ../../app/stylesheets/application.scss */
+#overview .column:nth-child(3) .icon {
+  background-position: -330px 0px;
+}
+@media (min-width: 67.5em) {
+  /* line 279, ../../app/stylesheets/application.scss */
+  #overview .column {
+    padding-bottom: 1.333em;
+    margin-bottom: 1.333em;
+    width: 32.203%;
+    float: left;
+    margin-right: 1.695%;
+    display: inline;
+  }
+  /* line 285, ../../app/stylesheets/application.scss */
+  #overview .column:nth-child(3) {
+    float: right;
+    margin-right: 0;
+    #margin-left: -1em;
+    display: inline;
+  }
+}

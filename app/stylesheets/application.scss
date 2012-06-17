@@ -246,3 +246,45 @@ h2 i{
     width: 33%;
   }
 }
+
+#overview {
+  @include clearfix();
+  
+  h2 {
+    @include trailer;
+    text-align: center;
+  }
+  .icon {
+    margin: auto;
+    width: 128px;
+    height: 128px;
+    background-image: url(/images/home_icons.png);
+    background-repeat: no-repeat;
+  }
+  .column {
+    &:nth-child(2) {
+      .icon {
+        background-position: -165px 0px;
+      }
+    }
+  }
+  .column {
+    &:nth-child(3) {
+      .icon {
+        background-position: -330px 0px;
+      }
+    }
+  }
+  @include at-breakpoint(60em 12) { 
+    .column {
+      @include padding-trailer;
+      @include trailer;
+      @include span-columns(4,12);
+      
+
+      &:nth-child(3) {
+        @include omega;
+      }
+    }
+  }
+}
